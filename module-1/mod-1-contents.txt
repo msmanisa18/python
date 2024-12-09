@@ -1,0 +1,160 @@
+Python Class - 1:
+
+	Definition:
+		Python is a high-level, interpreted, interactive, object-oriented, scripting and programming language.
+	1. Version Check 	-	https://en.wikipedia.org/wiki/History_of_Python
+	2. Download and Install - 	https://www.python.org/downloads/
+	3. Hello World Example 	- 	welcome.py
+	4. Features of Python:
+		1. Compiled vs Interpreted
+			Python is interpreted language.
+		2. Freeware and Opensource
+			Python is freeware and opensource.
+		3. Statically typed vs Dynamically typed
+			Python is Dynamically typed.
+	5. Comment lines
+		Lines ignored during program execution.
+	6. Print Statement
+
+Python Class - 2:
+
+	1. History
+	2. Features of Python: contd..
+		Extensible:
+		Extensibility means permitting language users to define new language features. 
+		A programming language is said to be extensible if it can be extended to other languages. 
+		Starting with a base language and using various definition facilities an extensible language user can create new notations, new data structures, new operations, and, sometimes, new regimes of control.
+		Python code can also be written in other languages like C++, making it a highly extensible language.
+	3. Identifiers: 
+		Example: identifiers.py
+		A name in Python program.
+		It can be name of class, method or variable.
+		Used for identification purpose.
+	4. Reserved Words or Keywords: 
+		Example: res_word.py
+		Words reserved for some meaning.
+		Ex: 
+			import keyword
+			print(keyword.kwlist)
+			
+			output:
+			['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+			
+	5. Data Types:
+		Data Types are used to define the type of a variable. 
+		It defines what type of data we are going to store in a variable.
+		Example: variable_details.py
+			a = 10			-> Variable
+			print(a)		-> Value
+			print(type(a))  	-> Data Type
+			print(id(a))		-> Address
+
+Python Class - 3:
+
+	Fundamental Data Types:
+		1. int
+		2. float
+		3. complex
+		4. bool
+		5. str 
+		Example: data_types.py
+
+	Representation of integral values:
+		1. Decimal      	--> Default number system
+		2. Binary 		--> Prefix --> 0b or 0B
+		3. Octal		--> Prefix --> 0o or 0O
+		4. Hexadecimal		--> Prefix --> 0x or 0X
+		Example: int_values_details.py
+	
+	Base Conversion: 
+		Output always comes in Decimal format.
+		If we want to print the value explicitly in any number format, we should go with this:
+		1. bin()
+		2. oct()
+		3. hex()
+		Example: base_conversion.py
+
+Python Class - 4:
+
+	Immutability:
+		Example: immutabiliy_ex.py
+		Everything in python is an object.
+		If we create an object, we cannot perform any change on it.
+		If we do change, a new object will be created.
+		This non changable behaviour is called as immutability.
+		a = 10  --> a is the variable , 10 is the object
+		b = 10
+		print(id(a))
+		print(id(b))
+		print(a is b)
+
+	Type Casting:
+		Conversion of one data type to another.
+		a = 10.5
+		b = int(a)
+		5 inbuilt functions available:
+			1. int()
+				Example: type_cast_to_int.py
+				float to int ---> Decimal points will be removed
+				complex to int -> Cannot be converted
+				bool to int ----> Can be
+				str to int -----> Must be specified in base 10 only, then they can be converted
+			2. float()
+			Example: type_cast_to_float.py
+				int to float -----> From any int base format to float --> possible
+				complex to float -> Cannot be converted
+				bool to float	 -> Yes
+				str to float	 -> Must be specified in base 10 only, can contain int or float
+			3. complex()
+			Example: type_cast_to_complex.py
+				2 functions available:
+					complex(parameter1)
+					complex(parameter1, parameter1)
+				int to complex    	-> Yes
+				float to complex  	-> Yes
+				bool to complex   	-> Yes
+				str to complex   	-> Yes
+			4. bool()
+					Example: type_cast_to_bool.py
+					zero = false
+					non zero = true
+					empty string = false
+					non empty string = true
+				int to bool			-> Yes
+				float to bool		-> Yes
+				complex to bool		-> Yes
+				str to bool			-> Yes
+			5. str()
+				Example: type_cast_to_str.py
+				int to str			-> Yes
+				float to str			-> Yes
+				complex to str			-> Yes
+				bool to str			-> Yes
+
+Python Class - 5:
+
+	1. Escape Characters
+		Example: esc_char_ex.py
+		
+Python Class - 6:		
+	Collection - Group of elements
+		1. list 
+			Example: list-ex.py
+	
+Python Class - 7:
+	1. tuple
+		Example: tuple-ex.py
+		
+Python Class - 8:
+	1. tuple
+		Example: tuple-ex.py
+	2. set
+		Example: set-ex.py
+	3. frozenset
+		Example: frozenset-ex.py
+	4. dict
+		Example: dict-ex.py
+	
+Python Class - 9:
+	range-ex.py
+	bytearray-ex.py
